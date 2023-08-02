@@ -4,5 +4,75 @@
     --font-color: #EE24FF;
     --font-bold-color: #3F3D56;
     --text-color: #828282;
+    --p-color: #ECEFF2;
     --font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 480px;
+    margin-top: 64px;
+}
+
+.first{
+    color: var(--font-color);
+}
+
+span{
+    color: var(--font-bold-color);
+}
+
+main{
+    text-align: center;
+    margin-top: 52px;
+}
+
+main h1{
+    font-size: 2.5em;
+    color: var(--font-bold-color);
+}
+
+main p{
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #8282823b;
+    width: 391px;
+    margin: 64px auto;
+    padding-top: 16px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--font-bold-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a + a{
+    margin-left: 42px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.wave{
+    position: fixed;
+    bottom: -30px;
+    width: 100%;
 }
