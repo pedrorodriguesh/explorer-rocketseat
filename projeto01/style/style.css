@@ -7,11 +7,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+:root{
+    --font-color: #ff9900;
+}
+
 header{
     margin-top: 150px;
 
     display: flex;
     justify-content: center;
+}
+
+header img{
+    width: 470px;
 }
 
 
@@ -22,4 +31,39 @@ main{
 
 main h1{
     font-size: 3.5em;
+}
+
+section{
+    margin-top: 32px;
+    text-align: center;
+}
+
+.p2{
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+.line{
+    margin: auto;
+    width: 500px;
+    border: 1px solid #b6b6b654;
+}
+
+
+footer{
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
