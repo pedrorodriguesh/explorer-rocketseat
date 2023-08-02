@@ -12,6 +12,10 @@
     --font-color: #ff9900;
 }
 
+span{
+    color: var(--font-color);
+}
+
 header{
     margin-top: 150px;
 
