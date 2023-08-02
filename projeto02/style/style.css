@@ -5,3 +5,14 @@
     --destaque-color: #89C5CC;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 65px auto 0;
+
+}
