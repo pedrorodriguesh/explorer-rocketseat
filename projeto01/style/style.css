@@ -66,8 +66,11 @@ footer a{
     text-decoration: none;
     color: var(--font-color);
     font-weight: bold;
+    padding: 7px;
 }
 
 footer a:hover{
-    text-decoration: underline;
+    background-color: #ff990021;
+    border-radius: 10px;
+    padding: 7px;
 }
