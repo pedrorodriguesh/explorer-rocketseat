@@ -4,12 +4,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-name)
 }
 
 
 :root{
     --font-color: #ff9900;
+    --font-name: 'Poppins', sans-serif;
 }
 
 span{
