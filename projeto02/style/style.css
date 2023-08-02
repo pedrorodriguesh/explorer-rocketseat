@@ -12,9 +12,16 @@
 }
 
 
+
 .page{
     width: 1200px;
-    margin: 65px auto 0;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(145, 201, 187, 0.38) 100%);
 }
 
 
@@ -47,7 +54,7 @@ li a{
 }
 
 li a:hover{
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 span{
@@ -72,6 +79,7 @@ section p{
     line-height: 28px;
     font-size: 20px;
     margin-bottom: 40px;
+    color: #7D7987;
 }
 
 section button{
@@ -87,10 +95,13 @@ section button{
     border-radius: 10px;
     color: white;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+    font-family: 'Mulish', sans-serif;
 }
 
 button:hover{
+    background-color: #58a58a;;
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 footer{
