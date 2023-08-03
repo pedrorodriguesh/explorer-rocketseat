@@ -127,6 +127,7 @@ fieldset select{
     border: 1px solid #E6E6F0;
 
     margin-top: 8px;
+    margin-bottom: 48px;
 
     font-family: var(--font-label);
 
@@ -135,4 +136,9 @@ fieldset select{
 
 fieldset select option{
     font-family: var(--font-label);
+}
+
+#private{
+    width: 24px;
+    height: 24px;
 }
