@@ -16,13 +16,13 @@
             <p>O primeiro passo é preencher esse <br> formulário de inscrição.</p>
         </header>
     
-        <form action="" method="">
+        <form id="my-form">
 
             <fieldset>
                 <legend>Informações do Evento</legend>
 
                 <label for="titulo">Título do evento <span>(mínimo 8 caracteres)</span></label><br>
-                <input type="text" name="titulo" id="titulo">
+                <input type="text" name="titulo" id="titulo" required minlength="8">
 
                 <label for="url">Link do evento <span>(comece com https://)</span></label>
                 <input type="url" name="url" id="url">
@@ -48,7 +48,7 @@
                 <input type="email" name="admemail" id="admemail">
 
                 <label for="password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="8" required>
 
                 <div class="checkbox">
                     <input type="checkbox" name="private" id="private">
@@ -70,17 +70,13 @@
 
                     <label for="end">Até</label>
                     <input type="time" name="end" id="end">
-
-
                 </div>
-
-
-
-
             </fieldset>
-
-
         </form>
+
+        <footer>
+            <input type="submit" value="Salvar evento" form="my-form">
+        </footer>
 
     </div>
 
