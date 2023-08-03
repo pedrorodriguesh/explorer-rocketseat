@@ -192,6 +192,41 @@ legend.secondmentor{
     padding-top: 30px;
 }
 
+footer{
+    display: flex;
+    width: 750px;
+    height: 160px;
+
+    background-color: var(--header-color);
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+    border-radius: 0 0 20px 20px;
+}
+
+footer input{
+    width: 680px;
+    height: 56px;
+    
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 20px;
+
+    padding: 15px 40px;
+
+    font-family: var(--big-fonts);
+    font-size: 20px;
+
+    cursor: pointer;
+    border: 0;
+}
+
+footer input:hover{
+    background-color: #d83e5d;
+    transform: scale(1.02);
+}
 
 
 
