@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backg-header: #121214;
+    --backg-body: #D9D9D9;
+    --backg-button: #04D361;
+    --fontp-color: #42D3FF;
+    --font-title: 'Archivo', sans-serif;
+    --font-label: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--font-label);
+    background-color: var(--backg-body);
+}
+
+body::before{
+    content: '';
+
+    width: 100%;
+    height: 368px;
+
+    background-color: var(--backg-header);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page{
+    width: 736px;
+    margin: 0 auto;
+}
+
+header{
+    width: 319px;
+    margin-top: 74px;
+}
+
+header h1{
+    font-family: var(--font-title);
+    font-weight: bold;
+    color: white;
+
+    margin-bottom: 24px;
+}
+
+header p{
+    color: var(--fontp-color);
+}
+
+form{
+    margin-top: 38px;
+    background-color: white;
+    border-radius: 8px;
+
+    min-height: 300px;
+
+    padding: 64px;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #C1BCCC;
+}
+
+fieldset input{
+    width: 608px;
+    height: 56px;
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    margin-bottom: 24px;
+    margin-top: 8px;
+
+    box-sizing: border-box;
+
+    padding: 0 24px;
+
+    font-family: var(--font-label);
+    font-size: 16px;
+}
+
+fieldset label{
+    margin-bottom: 8px;
+
+}
