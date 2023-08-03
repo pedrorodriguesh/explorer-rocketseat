@@ -44,21 +44,36 @@
             <fieldset>
                 <legend>Privacidade</legend>
 
-                <label for="admemail">E-mail do administrador <span>(digite um email válido)</span></label>
+                <label for="admemail">E-mail do administrador <span>(digite um e-mail válido)</span></label>
                 <input type="email" name="admemail" id="admemail">
 
                 <label for="password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
                 <input type="password" name="password" id="password">
 
-                <input type="checkbox" name="private" id="private">
-                <label for="private">Evento privado</label>
+                <div class="checkbox">
+                    <input type="checkbox" name="private" id="private">
+                    <label for="private">Evento privado</label>
+                    
+                </div>
+
             </fieldset>
 
             <fieldset>
-                <legend>Dia e Hora</legend>
+                <legend class="date">Dia e Hora</legend>
 
-                <label for="date">Data</label>
-                <input type="date" name="date" id="date">
+                <div class="col">
+                    <label for="date">Data</label>
+                    <input type="date" name="date" id="date">
+
+                    <label for="begin">Das</label>
+                    <input type="time" name="begin" id="begin">
+
+                    <label for="end">Até</label>
+                    <input type="time" name="end" id="end">
+
+
+                </div>
+
 
 
 
