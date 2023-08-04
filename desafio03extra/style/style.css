@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+:root{
+    --header-color: #293241;
+    --bodybackg-color: #BFD7E4;
+    --detail-color: #F67669;
+    --big-font: 'Staatliches', sans-serif;
+    --small-font: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bodybackg-color);
+    
+}
+
+body::before{
+    content: '';
+
+    height: 465px;
+    
+
+}
