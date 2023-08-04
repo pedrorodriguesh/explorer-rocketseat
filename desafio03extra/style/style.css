@@ -32,6 +32,7 @@ body::before{
     z-index: -1;
 }
 
+
 .page{
     width: 750px;
     margin: 0 auto;
@@ -68,17 +69,19 @@ form {
 
 }
 
-form::before{
-    content: ' ';
-
-    width: 750px;
-    height: 139px;
-
-    position: absolute;
-    background-color: var(--detail-color);
-
-    border-radius: 10px 10px 0 0;
-    
-
+fieldset{
+    border: none;
 }
+
+fieldset legend{
+    text-align: center;
+    padding: 50px;
+
+    font-family: var(--big-font);
+    font-size: 24px;
+    color: var(--header-color);
+}
+
+
+
 
