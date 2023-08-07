@@ -19,7 +19,7 @@ body{
     
 }
 
-body::before{
+body::before{  /* Aqui é que faz a parte de trás do header, cria um child do body */
     content: ' ';
 
     width: 100%;
@@ -29,7 +29,7 @@ body::before{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -1;  /* Aqui é pra mandar pra camada de trás, alterar as camadas */
 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
 
