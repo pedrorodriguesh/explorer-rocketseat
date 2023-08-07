@@ -15,4 +15,80 @@
 
 body{
     font-family: var(--all-font);
+    background-image: url(/cheesecake/images/background1.png) ;    
+}
+
+main{
+    width: 31.9rem;
+    height: 94.1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.4rem;
+
+    margin: 0 auto;
+
+    padding-top: 5.3rem;
+    padding-bottom: 5.3rem;
+}
+
+img{
+    width: 31.9rem;
+
+    margin-bottom: 4.6rem;
+}
+
+h1{
+    font-size: 2.8rem;
+    color: var(--all-color);
+    text-align: center;
+
+    margin-bottom: 4.6rem;
+
+    width: 31.9rem;
+    
+}
+
+p{
+    color: var(--all-color);
+    font-size: 1.4rem;
+
+    width: 31.9rem;
+
+    width: 50 rem;
+    text-align: justify;
+}
+
+h2{
+    color: var(--all-color);
+    font-size: 2.8rem;
+
+    margin-bottom: 3.2rem;
+}
+
+ul{
+    color: #A54328;
+    font-size: 1.4rem;
+}
+
+ol{
+    color: var(--all-color);
+    font-size: 1.4rem;
+}
+
+button{
+    margin-top: 2.4rem;
+
+    width: 94px;
+    height: 31px;
+
+    border-radius: 6px;
+    border: none;
+    background-color: var(--all-color);
+
+    color: white;
+
+    
+    
 }
