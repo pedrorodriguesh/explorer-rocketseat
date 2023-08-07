@@ -109,7 +109,7 @@ span{
     font-weight: 800;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) {  /* aqui é o media querie, tiver + de 700px width vai setar as configurações abaixo */
     body{
         padding: 8rem;
     }
