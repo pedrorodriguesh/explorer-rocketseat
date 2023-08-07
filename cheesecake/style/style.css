@@ -72,6 +72,10 @@ ul{
     font-size: 1.4rem;
 }
 
+ul li{
+    padding-left: 5px;
+}
+
 ol{
     color: var(--all-color);
     font-size: 1.4rem;
@@ -88,7 +92,22 @@ button{
     background-color: var(--all-color);
 
     color: white;
+}
 
-    
-    
+@media (min-width: 769px){
+   main{
+    display: flex;
+    flex-direction: row;
+
+    gap: 189px;
+   }
+
+   .recipe{
+    width: 52.5rem;
+    height: 60.7rem;
+   }
+
+   ul{
+    width: 52.5rem;
+   }
 }
