@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
+:root{
+    --backg-color: #121214;
+    --h1-color: #02799D;
+    --mediufonts-color: #E1E1E6;
+    --smallfonts-color: #C4C4CC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--backg-color);
+
+    padding: 72px 104px;
+
+    display: grid;
+
+    justify-content: center;
+}
+
+
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    color: var(--h1-color);
+    font-weight: 900;
+    font-size: 58px;
+
+    
+}
+
+header > h2{
+    color: var(--mediufonts-color);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+
+    
+
+    margin-bottom: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+
+
+    row-gap: 48px;
+    column-gap: 60px;
+
+    
+}
+
+.card{
+    background-color: #202024;
+    border-radius: 8px;
+    border: 2px solid #323238;
+
+    overflow: hidden;
+}
+
+.card h2{
+    color: var(--mediufonts-color);
+    font-family: 'Mulish', sans-serif;
+
+    
+    padding: 24px 32px 0;
+}
+
+.card p{
+    font-size: 18px;
+    color: var(--smallfonts-color);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    padding: 24px 32px 32px;
+
+    text-align: justify;
+}
+
+
+ 
