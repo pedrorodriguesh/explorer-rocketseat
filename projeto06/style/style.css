@@ -46,7 +46,7 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 370px);   /* Aqui eu estou criando o grid de colunas, com 3 colunas e com os tamanhos de 370px */
 
-    row-gap: 48px;       /* aqui é o espaçamento entre linhas e entre colunas */
+    row-gap: 48px;       /* aqui é o espaçamento entre linhas e entre colunas, da pra usar shorthand gap também */
     column-gap: 60px;
 
     
