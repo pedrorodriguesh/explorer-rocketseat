@@ -18,7 +18,7 @@ body{
 
     padding: 72px 104px;
 
-    display: grid;
+    display: grid;  /* Aqui usei o grid pra deixar tudo no meio da página */
 
     justify-content: center;
 }
@@ -39,17 +39,14 @@ header > h2{
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
 
-    
-
     margin-bottom: 20px;
 }
 
 main{
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(3, 370px);   /* Aqui eu estou criando o grid de colunas, com 3 colunas e com os tamanhos de 370px */
 
-
-    row-gap: 48px;
+    row-gap: 48px;       /* aqui é o espaçamento entre linhas e entre colunas */
     column-gap: 60px;
 
     
