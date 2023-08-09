@@ -10,17 +10,22 @@
 }
 
 :root{
-    --backg-color: #F5F5F5;
+    --backg-color: #e4e4e4;
     --formbackg-color: #EEE;
 }
 
 body{
-    background-color: var(--backg-color        )
+    background-color: var(--backg-color)
 }
 
 header{
-    height: 80px;
+    
     background-color: #FFF;
+
+    display: flex;
+    gap: 75px;
+
+    padding: 16px 112px;
 }
 
 ul{
@@ -32,6 +37,8 @@ ul{
 
 ul li{
     font-size: 18px;
+
+    align-content: center;
 }
 
 
@@ -41,9 +48,13 @@ main{
     gap: 22px;
 
     place-content: center;
+
+    margin-top: 89px;
 }
 
 .card{
+    
+    
     background-color: #FFF;
     border-radius: 8px;
 
@@ -56,6 +67,15 @@ main{
     font-size: 18px;
 
     padding: 22px;
+}
+
+.input-wrapper input{
+    width: 686px;
+    height: 48px;
+
+    background-color: #EEE;
+    border-radius: 5px;
+    border: none;
 }
 
 
