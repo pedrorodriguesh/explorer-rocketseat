@@ -54,6 +54,7 @@ main{
     place-content: center;
 
     margin-top: 64px;
+    margin-bottom: 176px;
 }
 
 .card{
@@ -93,7 +94,7 @@ footer{
     background-color: #FFF;
 
     text-align: center;
-    padding: 45px;
+    padding: 30px;
 
     
 }
