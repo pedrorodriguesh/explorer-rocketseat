@@ -1,7 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --backg-color: #F5F5F5;
     --formbackg-color: #EEE;
 }
+
+body{
+    background-color: var(--backg-color        )
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    gap: 22px;
+
+    place-content: center;
+}
+
+.card{
+    background-color: #FFF;
+    border-radius: 8px;
+
+    height: 288px;
+
+    overflow: hidden;
+}
+
+.card h2{
+    font-family: 'Mulish';
+    font-size: 18px;
+
+    padding: 22px;
+}
+
