@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish';
+
 }
 
 :root{
@@ -14,6 +16,22 @@
 
 body{
     background-color: var(--backg-color        )
+}
+
+header{
+    height: 80px;
+    background-color: #FFF;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+
+    gap: 75px;
+}
+
+ul li{
+    font-size: 18px;
 }
 
 
@@ -35,9 +53,10 @@ main{
 }
 
 .card h2{
-    font-family: 'Mulish';
     font-size: 18px;
 
     padding: 22px;
 }
+
+
 
