@@ -15,15 +15,9 @@
 }
 
 body{
-    background-color: var(--backg-color)
+    background-color: var(--backg-color);
 }
 
-body > h1{
-    text-align: center;
-    margin-top: 10px;
-
-    font-weight: 900;
-}
 
 header{
     
@@ -59,7 +53,7 @@ main{
 
     place-content: center;
 
-    margin-top: 89px;
+    margin-top: 64px;
 }
 
 .card{
@@ -93,12 +87,15 @@ main{
 }
 
 footer{
+    font-size: 20px;
     
     margin-top: 64px;
     background-color: #FFF;
 
     text-align: center;
-    padding: 16px;
+    padding: 45px;
+
+    
 }
 
 
