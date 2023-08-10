@@ -11,8 +11,8 @@
 
     --color-base-gray-100: #f5f5f5;
     --color-base-white: #fff;
-    --color-base-gray-900: #202024;
-    --color-base-gray-300: #8D8D99;
+    --color-base-gray-900: #1f1f23;
+    --color-base-gray-300: #8d8d9a;
     font-family: 'Mulish', sans-serif;
 }
 
@@ -127,6 +127,7 @@ main h1{
     transition-timing-function: ease-in-out;*/
 
     transition: all 200ms ease-in-out;
+    display: block;
     
 }
 
