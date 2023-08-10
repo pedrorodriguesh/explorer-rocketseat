@@ -18,7 +18,6 @@
 body{
     font-size: 1.6rem;
     background-color: var(--backg-body);
-    
 }
 
 
@@ -61,8 +60,15 @@ header form{
 }
 
 section h1{
-    padding: 3.2rem 2.4rem;
+    padding: 3.2rem 2.4rem .8rem;
     font-weight: 700;
+}
+
+.thumb{
+    display: flex;
+    padding: 8px 22px;
+    gap: 1.2rem;
+    
 }
 
 section p{
