@@ -20,9 +20,9 @@ body{
     background-color: var(--backg-body)
 }
 
-
-
-
+.item img{
+    width: 100%;
+}
 
 #app{
     display: grid;
