@@ -17,25 +17,22 @@
 
 body{
     font-size: 1.6rem;
-    background-color: var(--backg-body)
+    background-color: var(--backg-body);
+    
 }
 
-.item img{
-    width: 100%;
-}
 
 #app{
     display: grid;
     grid-template-rows: max-content 1fr max-content;
     height: 100vh;
-    gap: 10px;
 }
 
 header{
     display: flex;
     gap: 3.2rem;
     align-items: center;
-
+    
     padding: 1.2rem 2.8rem;
     background-color: var(--backg-headerfooter);
 }
@@ -51,20 +48,29 @@ header form{
     
     border: none;
     border-radius: .6rem;
-
+    
     font-size: 1.6rem;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
-    
+
+    color: white;
 }
 
 ::placeholder{
     color: white;
 }
 
-main{
-    background-color: var(--backg-body);
+section h1{
+    padding: 3.2rem 2.4rem;
+    font-weight: 700;
 }
+
+section p{
+    padding: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
 
 footer{
     background-color: var(--backg-headerfooter);
@@ -75,3 +81,7 @@ footer p{
     text-align: center;
     color: white;
 }
+
+.item img{
+        width: 100%;
+    }
