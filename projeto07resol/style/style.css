@@ -139,7 +139,8 @@ main h1{
     padding: 2.2rem;
     background-color: var(--color-base-white);
     z-index: 1;
-    position: relative;
+    position: relat
+    ive;
 }
 
 .details h2{
@@ -158,4 +159,36 @@ main h1{
     line-height: 0;
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+header {
+    --startY: -100%;
+    animation: move .4s;
+}
+
+footer{
+    --startY: 100%;
+    animation: move .4s;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(var(--startY));
+    }
+}
+
+.item{
+    --delay: .4s;
+    animation: appear .4s var(--delay) backwards;
+}
+
+@keyframes appear{
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
 }
