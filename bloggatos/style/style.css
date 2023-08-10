@@ -21,6 +21,7 @@ body{
 }
 
 
+
 #app{
     display: grid;
     grid-template-rows: max-content 1fr max-content;
@@ -43,6 +44,20 @@ header form{
 
 .input-wrapper input{
     width: 100%;
+    padding: 1.4rem;
+    background-color: var(--input-color);
+    
+    border: none;
+    border-radius: .6rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    
+}
+
+::placeholder{
+    color: white;
 }
 
 main{
