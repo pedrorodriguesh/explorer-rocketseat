@@ -128,7 +128,8 @@ main h1{
 
     transition: all 200ms ease-in-out;
     display: block;
-    
+
+    cursor: pointer;
 }
 
 .item img:hover{
@@ -140,8 +141,7 @@ main h1{
     padding: 2.2rem;
     background-color: var(--color-base-white);
     z-index: 1;
-    position: relat
-    ive;
+    position: relative;
 }
 
 .details h2{
