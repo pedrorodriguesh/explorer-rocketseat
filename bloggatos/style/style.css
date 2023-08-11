@@ -59,6 +59,10 @@ header form{
     color: white;
 }
 
+main{
+    overflow-y: scroll;
+}
+
 section h1{
     padding: 3.2rem 2.4rem .8rem;
     font-weight: 700;
