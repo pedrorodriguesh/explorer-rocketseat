@@ -101,6 +101,11 @@ article h3{
     padding-bottom: .4rem;
 }
 
+article p{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
 .articles{
     display: flex;
 
