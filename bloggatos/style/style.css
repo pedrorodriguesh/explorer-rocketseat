@@ -94,8 +94,13 @@ footer p{
         width: 100%;
 }
 
+aside{
+    padding-top: 4.4rem;
+
+}
+
 aside h2{
-    padding: 3.2rem 2.4rem .5rem;
+    padding-left: 2.2rem;
     font-size: 2.4rem;
 }
 
@@ -127,15 +132,25 @@ article p{
 
     main{
         display: flex;
-        padding: 0rem 12rem 0rem;
-        align-items: center;
+        padding: 2rem 12rem 0rem;
+        align-items: flex-start;
+
+        gap: 3.4rem;
 
         margin: auto;
     }
 
     .articles{
-        width: 38rem;
+        width: 45rem;
+        padding-bottom: 1rem;
+        
     }
+
+    aside{
+        padding-top: 0;
+    }
+
+    
 
     section h1{
         padding: 0;
@@ -156,6 +171,10 @@ article p{
 
     .item img{
         width: 80rem;
+    }
+
+    footer{
+        margin-top: 3.6rem;
     }
 }
     
