@@ -19,7 +19,7 @@ header h1{
 
     flex-wrap: wrap;
 
-    align-content: flex-start; /* Só funciona quando tem múltiplas linhas flexíveis, usando o flex-wrap: */
+    align-content: center; /* Só funciona quando tem múltiplas linhas flexíveis, usando o flex-wrap: */
     
 
     border: 1px solid red;
