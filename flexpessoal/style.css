@@ -16,11 +16,11 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+
+    border: 1px solid red;
 
     flex-direction: row;
-
-    flex-wrap: wrap-reverse;
-
 
     height: 95vh;
 
