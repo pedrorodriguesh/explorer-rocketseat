@@ -16,7 +16,11 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+
+    flex-wrap: wrap;
+
+    align-content: flex-start; /* Só funciona quando tem múltiplas linhas flexíveis, usando o flex-wrap: */
+    
 
     border: 1px solid red;
 
