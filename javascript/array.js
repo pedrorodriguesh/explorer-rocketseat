@@ -12,3 +12,5 @@ animals.push('Dog')
 animals.push('Lion')
 
 console.log(animals[3], animals[4])
+
+console.log(animals.length)
