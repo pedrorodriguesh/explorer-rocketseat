@@ -19,11 +19,11 @@ header h1{
 
     flex-direction: row;
 
-    border: 1px solid red;
+    flex-wrap: wrap-reverse;
+
 
     height: 95vh;
 
-    gap: 15px;
 }
 .right-side{
     background-color: lightcoral;
