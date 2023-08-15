@@ -15,3 +15,11 @@ let string = "123"
 console.log(Number(string))
 let number = 321
 console.log(String(number))
+
+//Contar quantos caracteres tem uma palavra e quantos dígitos tem um número
+
+let word = 'Paralelepipedo'
+console.log(word.length)
+
+let number1 = 1234                 // number não recebe .lenght, tem que transformar em String
+console.log(String(number).length)
