@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db;
+  }
+  
+  .calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+</style>
+<title>Juros Compostos com Aportes Mensais</title>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Calculadora de Juros Compostos com Aportes Mensais</h1>
+    <label for="initialAmount">Aporte Inicial:</label>
+    <input type="number" id="initialAmount" min="0" step="any">
+    <br>
+    <label for="monthlyDeposit">Aportes Mensais:</label>
+    <input type="number" id="monthlyDeposit" min="0" step="any">
+    <br>
+    <label for="interestRate">Rentabilidade Mensal (%):</label>
+    <input type="number" id="interestRate" min="0" step="any">
+    <br>
+    <label for="months">Período (meses):</label>
+    <input type="number" id="months" min="0" step="1">
+    <br>
+    <button onclick="calculate()">Calcular</button>
+    <h2>Resultado:</h2>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function calculate() {
+      const initialAmount = parseFloat(document.getElementById("initialAmount").value);
+      const monthlyDeposit = parseFloat(document.getElementById("monthlyDeposit").value);
+      const interestRate = parseFloat(document.getElementById("interestRate").value) / 100;
+      const months = parseInt(document.getElementById("months").value);
+
+      let totalAmount = initialAmount;
+      for (let i = 1; i <= months; i++) {
+        totalAmount = (totalAmount + monthlyDeposit) * (1 + interestRate);
+      }
+
+      document.getElementById("result").textContent = `Valor Total após ${months} meses: R$ ${totalAmount.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
