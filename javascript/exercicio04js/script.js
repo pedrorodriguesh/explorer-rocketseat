@@ -26,11 +26,12 @@ gradeTwo= Number(gradeTwo)
 homework = Number(homework)
 
 let media = (gradeOne + gradeTwo + homework) / 3
+media = media.toFixed(2) // .toFixed define o número de casas decimais que quero que mostre, colocando dessa forma eu evito a repetição no código.
 
 alert('A média do aluno é: ' + media)
 
 if (media >= 6){
-    alert(`Parabéns! ${name} você foi aprovado.`)
+    alert(`Parabéns! ${name} você foi aprovado com média ${media}.`)
 } else {
-    alert(`Que pena! ${name} você foi reprovado. Estude mais!`)
+    alert(`Que pena! ${name} você foi reprovado com média ${media}. Estude mais!`)
 }
