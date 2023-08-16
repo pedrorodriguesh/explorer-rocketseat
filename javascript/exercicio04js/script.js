@@ -16,6 +16,7 @@
 
 alert('Vamos calcular sua média no bimestre:')
 
+let name = prompt('Digite seu nome:')
 let gradeOne = prompt('Digite a primeira nota:')
 let gradeTwo = prompt('Digite a segunda nota:')
 let homework = prompt('Digite a terceira nota:')
@@ -29,7 +30,7 @@ let media = (gradeOne + gradeTwo + homework) / 3
 alert('A média do aluno é: ' + media)
 
 if (media >= 6){
-    alert('Aluno aprovado!')
+    alert(`Parabéns! ${name} você foi aprovado.`)
 } else {
-    alert('Aluno reprovado! Estude mais!')
+    alert(`Que pena! ${name} você foi reprovado. Estude mais!`)
 }
