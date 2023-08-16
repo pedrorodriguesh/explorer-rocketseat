@@ -13,3 +13,23 @@
 
     Em ambos os casos, mostre uma mensagem com o nome do aluno e a nota
 */ 
+
+alert('Vamos calcular sua média no bimestre:')
+
+let gradeOne = prompt('Digite a primeira nota:')
+let gradeTwo = prompt('Digite a segunda nota:')
+let homework = prompt('Digite a terceira nota:')
+
+gradeOne = Number(gradeOne)
+gradeTwo= Number(gradeTwo)
+homework = Number(homework)
+
+let media = (gradeOne + gradeTwo + homework) / 3
+
+alert('A média do aluno é: ' + media)
+
+if (media >= 6){
+    alert('Aluno aprovado!')
+} else {
+    alert('Aluno reprovado! Estude mais!')
+}
