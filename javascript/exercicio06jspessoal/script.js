@@ -17,17 +17,15 @@
 */
 
 
-let result = prompt('Adivinhe o número que estou pensando, está entre 0 e 10')
-const random = Math.round(Math.random() * 10)  // Math.random gera um número aleatório entre 0 e 1, sem inserir o 0 e 1. || Math.round arredonda esse valor
+let guess = prompt(`Guess the number i'm thinking, its between 0 and 10`)
+const random = Math.round(Math.random() * 10)
 
-let xAttempts = 1 // variável de controle pra contar quantas tentativas o usuário fez
+let xAttempts = 1
 
-while(Number(result) != random) {
-    result = prompt("Erro, tente novamente: ")
+while (Number(guess) != random) {
+    guess = prompt(`Oh! Try again`)
     xAttempts++
-} 
+}
 
-alert(`Você adivinhou o número em ${xAttempts} tentativas`)
-
-
+alert(`Yeah! You did it! It only tooked ${xAttempts} attempts`)
 
