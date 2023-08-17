@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9e0e0; /* Cor de fundo cor de rosa claro */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff80b0; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
