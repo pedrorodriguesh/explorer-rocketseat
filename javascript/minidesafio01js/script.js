@@ -13,7 +13,7 @@ alert (`A subtração dos valores é ${sub}`)
 let multi = numberOne * numberTwo
 alert (`A multiplicação entre os valores é ${multi}`)
 
-let div = numberOne / numberTwo
+let div = (numberOne / numberTwo).toFixed(2)
 alert (`A divisão entre os dois valores é ${div}`)
 
 let rest = numberOne % numberTwo
