@@ -144,6 +144,8 @@ header a{
     font-family: 'Mulish',sans-serif;
     
     margin-top: 2.4rem;
+
+    border: none;
 }
 
 ::placeholder{
