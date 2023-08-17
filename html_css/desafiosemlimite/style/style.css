@@ -7,6 +7,7 @@
     --smallfonts-color: #312D64;
 
     font-family: 'Mulish', sans-serif;
+    font-size: 62.5%;
 }
 
 *{
@@ -15,14 +16,74 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--backg-color1);
+}
 
+.astronaut{
+    width: 36.4rem;
+    height: 37rem;
+}
 
 header{
     background-color: var(--backg-color1 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+header h1{
+    color: var(--bigfonts-color);
+    font-weight: 900;
+
+    margin-top: 1.7rem;
+    font-size: 3.2rem;
+}
+
+header p{
+    font-size: 1.8rem;
+}
+
+header a{
+    margin-top: 3.5rem;
+    margin-bottom: 9.3rem;
 }
 
 .cards{
     background-image: var(--backg-color-cards);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5.0rem;
+    padding: 5rem 0 5rem 0;
+}
+
+.card{
+
+    background-color: white;
+    width: 35rem;
+    
+    padding: 2.6rem;
+
+    border-radius: 2rem;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.253);
+}
+
+.card h3{
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--bigfonts-color);
+
+    
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+.card p{
+    font-size: 1.6rem;
 }
 
 .email{
@@ -30,6 +91,7 @@ header{
 }
 
 footer{
+
     background-image: var(--backg-color-cards);
 }
 
@@ -38,4 +100,5 @@ footer p{
     color: white;
 
     padding: 32px 16px;
+    font-size: 1.8rem;
 }
