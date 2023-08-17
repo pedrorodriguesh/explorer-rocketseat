@@ -31,3 +31,7 @@ for(let student of students){
     ${situation}
     `)
 }
+
+
+
+
