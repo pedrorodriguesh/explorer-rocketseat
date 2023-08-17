@@ -70,6 +70,7 @@ header a{
 
     background-color: white;
     width: 32rem;
+    height: 36rem;
     
     padding: 2.6rem;
 
@@ -178,4 +179,28 @@ footer p{
 
     padding: 32px 16px;
     font-size: 1.8rem;
+}
+
+
+@media (min-width: 1024px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+
+        justify-content: center;
+
+        gap: 3rem;
+    }
+
+    .astronaut{
+        width: 72rem;
+        height: 72rem;
+
+        margin-bottom: 8rem;
+    }
+
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+    }
 }
