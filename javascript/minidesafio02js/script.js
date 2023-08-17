@@ -16,6 +16,8 @@ const students = [
     },
 ]
 
+
+
 function media(grade1, grade2) {
     let media = (grade1 + grade2) / 2
     return media
