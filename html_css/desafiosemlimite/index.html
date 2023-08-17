@@ -6,6 +6,7 @@
     <title>Explore sem limites!</title>
 
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -41,12 +42,14 @@
         <h2>Entre em contato</h2>
 
         <form>
-            <input type="text" name="name" id="name">
-            <input type="email" name="email" id="email">
+            <div class="input-wrapper">
+                <input type="text" name="name" id="name" placeholder="Seu nome">
+                <input type="email" name="email" id="email" placeholder="Email">
+    
+                <textarea name="" id="" placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-
-            <input type="submit" value="Enviar mensagem">
+            <input class="button" type="submit" value="Enviar mensagem">
         </form>
     </section>
 

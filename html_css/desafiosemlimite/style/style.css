@@ -43,11 +43,12 @@ header h1{
 
 header p{
     font-size: 1.8rem;
+    color: var(--smallfonts-color);
 }
 
 header a{
     margin-top: 3.5rem;
-    margin-bottom: 9.3rem;
+    margin-bottom: 6.5rem;
 }
 
 .cards{
@@ -64,7 +65,7 @@ header a{
 .card{
 
     background-color: white;
-    width: 35rem;
+    width: 36rem;
     
     padding: 2.6rem;
 
@@ -88,7 +89,68 @@ header a{
 
 .email{
     background-color: var(--backg-color1);
+
+    padding: 7rem 4.6rem;
 }
+
+.email h2{
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--bigfonts-color);
+
+    margin-bottom: 4rem;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.4rem;
+}
+
+.input-wrapper input{
+    height: 4.8rem;
+    
+    border-radius: 1.6rem;
+    border: 1.8px  solid #312D64;
+
+    background-color: var(--backg-color1);
+
+    padding: 1.2rem 1.4rem;
+}
+
+.input-wrapper textarea{
+    border-radius: 1.6rem;
+    border: 1.5px solid #312D64;
+
+    background-color: var(--backg-color1);
+    padding: 1.2rem 1.6rem;
+
+    height: 12rem;
+}
+
+.button{
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background-image: var(--backg-color-cards);
+
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Mulish',sans-serif;
+    
+    margin-top: 2.4rem;
+}
+
+::placeholder{
+    color: #312D64;
+    font-family: 'Mulish';
+    font-weight: 700;
+
+    font-size: 1.6rem;
+}
+
+
 
 footer{
 
