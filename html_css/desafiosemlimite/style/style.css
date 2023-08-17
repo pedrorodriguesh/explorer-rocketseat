@@ -14,3 +14,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+header{
+    background-color: var(--backg-color1 );
+}
+
+.cards{
+    background-image: var(--backg-color-cards);
+}
+
+.email{
+    background-color: var(--backg-color1);
+}
+
+footer{
+    background-image: var(--backg-color-cards);
+}
+
+footer p{
+    text-align: center;
+    color: white;
+
+    padding: 32px 16px;
+}
