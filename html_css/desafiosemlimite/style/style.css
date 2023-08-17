@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap');
+
+:root{
+    --backg-color1: #F9F4FB;
+    --backg-color-cards: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    --bigfonts-color: #B52184;
+    --smallfonts-color: #312D64;
+
+    font-family: 'Mulish', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
