@@ -14,6 +14,10 @@ body{
     place-items: center;
 }
 
+.hide{
+    display: none;
+}
+
 main{
     background-color: white;
     padding: 48px 64px 64px;
@@ -27,12 +31,21 @@ main{
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.76);
 }
 
+.screen2{
+    display: flex;
+    flex-direction: column;
+}
+
 h1{
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #34355B;;
+    color: #34355B;
+}
 
+h2{
+    font-family: 'Poppins',sans-serif;
+    color: #34355B;
 }
 
 p{ 
@@ -43,14 +56,35 @@ p{
     margin-bottom: 26px;
 }
 
-button{
+.another{
+    background-color: #FF9500;
+
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 190px;
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0 auto;
+    margin-top: 24px;
+
+    cursor: pointer;
+}
+
+.another:hover{
+    background-color: #bd6e00;
+}
+
+.cookie{
     border: none;
     background-color: white;
 
     cursor: pointer;
 }
 
-button:hover{
+.cookie:hover{
     animation: shake .3s infinite ease-in;
 }
 
