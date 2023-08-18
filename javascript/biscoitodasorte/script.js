@@ -1,12 +1,12 @@
 let phrase = document.querySelector(".screen2 p")
 
 function lucky(){
-    document.querySelector(".screen1").classList.add('hide')
+    document.querySelector(".screen1").classList.add('hide')    // classList tá pegando e adicionando a class hide na .screen1
     document.querySelector(".screen2").classList.remove('hide')
 
-    let randomNumber = Math.round(Math.random() * 10)
+    let randomNumber = Math.round(Math.random() * 10) // aqui tá gerando um número aleatório entre 0 e 10.
 
-    switch(randomNumber){
+    switch(randomNumber){  // o switch tem 10 cases, cada um correspondente ao número aleatório gerado acima, a cada case temos o phrase.innerText = `` mudando o texto dentro do parágrafo para todas as frases pré-definidas.
         case 0:
         phrase.innerText = `Start where you are. Use what you have. Do what you can.`
         break
@@ -54,6 +54,6 @@ function lucky(){
 }
 
 function again(){
-    document.querySelector(".screen1").classList.remove('hide')
+    document.querySelector(".screen1").classList.remove('hide')   // só voltando a tela inicial do biscoito
     document.querySelector(".screen2").classList.add('hide')
 }
