@@ -37,8 +37,6 @@ function again(){
 }
 
 // Events
-
-
 tryy.addEventListener('click', handleTryClick) // Essa linha de código é EXATAMENTE a mesma coisa que colocar o "onclick" lá no HTML, que por sinal, é bem mais fácil de enxergar e entender.
 
 
