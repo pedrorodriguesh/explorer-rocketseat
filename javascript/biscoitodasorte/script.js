@@ -5,6 +5,6 @@ function lucky(){
     document.querySelector(".screen1").classList.add('hide')
     document.querySelector(".screen2").classList.remove('hide')
 
-    phrase.innerText = `Atitude é uma coisa pequena que faz toda a diferença`
+    phrase.innerText = `You want something in life, then why don't you go and get it?`
     
 }
