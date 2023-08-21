@@ -1,12 +1,16 @@
 let weight = document.querySelector('#weight')
 let cm = document.querySelector('#height')
 
-cm = Number(height)
-weight = Number(height)
+cm = Number(cm)
+weight = Number(weight)
 
-let height = cm / 100 
+let height = (cm / 100).toFixed(2)
 
-alert(height + weight)
+function calculate(){
+    alert(`Seu IMC é`)
+}
+
+
 
 
 
