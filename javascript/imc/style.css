@@ -9,10 +9,10 @@
 }
 
 body{
-    background-color: #040924;
+    background-color: #7480c5;
 
     display: grid;
-    place-items: center;
+    place-content: center;
 
     height: 100vh;
 }
@@ -32,8 +32,7 @@ main{
 h1{
     margin-bottom: 32px;
 
-    color: #14728f;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+    color: #7480c5;
 }
 
 span{
