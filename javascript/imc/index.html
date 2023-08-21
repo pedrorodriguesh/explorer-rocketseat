@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
+    <title>Calculadora IMC</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <main>
-        <form action="">
-            <h1>Cálculo de IMC</h1>
-            <div class="input-wrapper">
-                <label for="number">Peso: <span>(kg)</span></label>
-                <input type="number" name="number" id="weight">
-                
-                <label for="height">Altura: <span>(cm)</span></label>
-                <input type="number" name="height" id="height">
-                
-                <button onclick="calculate()">Calcular IMC</button>
-            </div>
-        </form>
-        
-    </main>
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1 class="title">Calculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input type="text" id="weight">
+                </div>
 
+                <div class="input-wrapper">
+                    <label for="height">Altura (m)</label>
+                    <input type="text" id="height">
+                </div>
+
+                <button>Calcular IMC <img src="assets/arrow-up-right.svg" alt=""></button>
+            </form>
+        </main>
+    </div>
+
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">Seu IMC é de 28</h2>
+
+            <button class="close"></button>
+        </div>
+    </div>
     
 </body>
 </html>
