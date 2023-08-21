@@ -76,7 +76,7 @@ form input:focus{
     margin-top: 1.6rem;
 }
 
-button{
+form button{
     margin-top: 3.2rem;
     padding: 1.6rem;
     width: 100%;
@@ -98,11 +98,16 @@ button{
     transition: background .3s;
 }
 
-button:hover{
+form button:hover{
     background: #64b1c9;
 }
 
 /* popup */
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .modal-wrapper{
     position: absolute;
@@ -111,5 +116,57 @@ button:hover{
 
     display: grid;
     place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+}
+
+.modal button{
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    cursor: pointer;
+
+    transition: transform .3s;
+}
+
+.modal button:hover{
+    transform: scale(1.2);
+}
+
+/* alert error */
+.alert-error.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.alert-error{
+    position: absolute;
+    background-color: rgb(221, 69, 69);
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: .8rem 0 .8rem 0;
+    text-align: center;
+    color: white;
+
+    font-weight: bold;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transform: translateY(-30px);
+    transition: transform .5s;
 }
 
