@@ -24,21 +24,20 @@
                 </div>
 
                 <div class="input-wrapper">
-                    <label for="height">Altura (m)</label>
-                    <input type="text" id="height">
+                    <label for="height">Altura (cm)</label>
+                    <input type="text" id="cm">
                 </div>
 
-                <button onclick="calculate()">Calcular IMC <img src="assets/arrow-up-right.svg" alt=""></button>
+                <button onclick="calculate(event)">Calcular IMC <img src="assets/arrow-up-right.svg" alt=""></button>
             </form>
         </main>
     </div>
-
 
     <div class="modal-wrapper">
         <div class="modal card">
             <h2 class="title">Seu IMC é de 28</h2>
 
-            <button class="close"><img src="assets/close.svg" alt="imagem para fechar a caixa"></button>
+            <button onclick="back()" class="close"><img src="assets/close.svg" alt="imagem para fechar a caixa"></button>
         </div>
     </div>
 
