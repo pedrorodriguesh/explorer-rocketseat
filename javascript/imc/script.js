@@ -9,7 +9,7 @@ function calculate(event){
     let height = Number(cm.value / 100).toFixed(2) // transformando a altura em cm em altura em metros.
     let imc = Number(weight.value / (height*height)).toFixed(2) // cálculo do IMC, sempre usando o .value pra pegar o valor do input.
 
-    if(isNaN(imc)){
+    if(isNaN(imc)){ // função isNaN vai checar se é o número ou não.
         error.classList.add('open')
     } else{
 
@@ -25,6 +25,8 @@ function calculate(event){
 function back(){
     popup.classList.remove("open")
 }
+
+
 
 
 
