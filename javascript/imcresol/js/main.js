@@ -12,9 +12,9 @@ form.onsubmit = function(event) {
     const weight = inputWeight.value
     const height = inputHeight.value // aqui embaixo eu estou pegando o valor da variável declarada acima, o conteúdo do input. (!!Usa o .value!!)
 
-    const showAlertError = notNumber(weight) || notNumber(height)
+    const weightOrHeightIsNotANumber = notNumber(weight) || notNumber(height)
 
-    if (showAlertError){
+    if (weightOrHeightIsNotANumber){
         alertError.open()
         return
     }
