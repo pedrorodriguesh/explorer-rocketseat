@@ -5,7 +5,6 @@ const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')  // aqui estou pegando o input do HTML, porém sem o valor inserido.
 
-
 form.onsubmit = function(event) {
     event.preventDefault()
 
@@ -17,7 +16,6 @@ form.onsubmit = function(event) {
     
     Modal.message.innerText = message
     Modal.open()
-    
 }
 
 function IMC (weight, height) {
