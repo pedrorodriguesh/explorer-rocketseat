@@ -9,8 +9,7 @@
 }
 
 body{
-    background-color: #7480c5;
-
+    background-color: #040924;
     display: grid;
     place-content: center;
 
@@ -32,7 +31,7 @@ main{
 h1{
     margin-bottom: 32px;
 
-    color: #7480c5;
+    color: #0C3440;
 }
 
 span{
@@ -57,7 +56,7 @@ span{
 
     border-radius: 8px;
     border: 1px solid #02799D;
-    background-color: #DCE2E9;
+    background-color: #dce2e97c;
 
     font-family: 'Roboto';
 }
