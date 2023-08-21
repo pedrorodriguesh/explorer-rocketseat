@@ -24,16 +24,58 @@ main{
     
     display: flex;
     flex-direction: column;
+
+    border-radius: 16px;
+    box-shadow: 2px 3px 10px black;
 }
 
 h1{
     margin-bottom: 32px;
 }
 
+span{
+    color: rgb(158, 158, 158);
+}
+
 .input-wrapper{
     display: flex;
     flex-direction: column;
-
-    gap: 20px;
 }
 
+.input-wrapper label{
+    margin-bottom: 8px;
+}
+
+.input-wrapper input{
+    width: 268px;
+    height: 50px;
+
+    padding: 16px;
+
+    border-radius: 8px;
+    border: 1px solid #02799D;
+
+    background-color: #DCE2E9;
+
+    margin-bottom: 16px ;
+}
+
+button{
+    margin-top: 16px;
+
+    padding: 16px;
+    background-color: #02799D;
+
+    border-radius: 8px;
+    border: none;
+
+    color: white;
+    font-family: 'Roboto';
+}
+
+button:hover{
+    background-color: #439eb9;
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
