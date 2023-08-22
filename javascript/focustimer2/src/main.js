@@ -4,6 +4,9 @@ import * as actions from './focustimer/actions.js'
 import state from './focustimer/state.js'
 import * as timer from './focustimer/timer.js'
 
+timer.updateDisplay()
+timer.countdown()
+
 //buttons.
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
@@ -17,14 +20,5 @@ rainBtn.addEventListener('click', () => {
 
 })
 
-updateDisplay()
-
-function updateDisplay(minutes, seconds){
-    minutes = minutes ?? state.minutes
-    seconds = seconds ?? state.seconds
-
-    el.minutes.textContent = String(minutes).padStart(2, "0")
-    el.seconds.textContent = String(seconds).padStart(2, "0")
-}
 
 
