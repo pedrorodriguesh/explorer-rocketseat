@@ -37,12 +37,12 @@ body{
     margin-bottom: 4rem;
 }
 
-.controls{
+#controls{
     display: flex;
     gap: 4rem;
 }
 
-.controls button{
+#controls button{
     background: none;
     border: none;
 

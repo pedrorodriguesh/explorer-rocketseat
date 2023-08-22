@@ -8,7 +8,6 @@ export function toggleRunning (){
 
     timer.countdown()
     sounds.buttonPressAudio.play()
-
 }
 
 export function reset(){
