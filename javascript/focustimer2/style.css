@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root{
+    --primary-color: #323238;
+    --button-bckg: #E1E1E6;
+    --button-active: #02799D;
+
+    font-size: 62.5%;
+}
+
+body{
+    color: var(--primary-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app{
+    display: flex;
+    gap: 12rem;
+}
+
+.timer{
+    font-size: 9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+
+    margin-bottom: 5.6rem;
+}
+
+.controls{
+    display: flex;
+    gap: 4rem;
+
+}
+
+.controls button{
+    background: none;
+    border: none;
+
+    font-size: 4rem;
+
+    cursor: pointer;
+}
+
+.right-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.right-side button{
+    padding: 2.4rem;
+
+    font-size: 4rem;
+
+    border: none;
+    border-radius: 16px;
+
+    background-color: var(--button-bckg);
+
+    cursor: pointer;
+}

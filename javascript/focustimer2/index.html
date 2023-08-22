@@ -9,9 +9,33 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="./src/main.js" type="module" defer></script>
 </head>
 <body>
+
+    <div id="app">
+        <section class="left-side">
+            <div class="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <button class="ph-bold ph-play-circle"></button>
+                <button class="ph-bold ph-stop-circle"></button>
+                <button class="ph-bold ph-plus"></button>
+                <button class="ph-bold ph-minus"></button>
+            </div>
+        </section>
+
+        <section class="right-side">
+            <button class="ph-bold ph-tree"></button>
+            <button class="ph-bold ph-cloud-rain"></button>
+            <button class="ph-bold ph-fire"></button>
+            <button class="ph-bold ph-storefront"></button>
+        </section>
+    </div>
     
 </body>
 </html>
