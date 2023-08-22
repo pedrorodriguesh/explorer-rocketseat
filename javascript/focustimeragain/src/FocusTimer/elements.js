@@ -1,1 +1,1 @@
-export const controls = document.getElementById('controls')
+export const controls = document.getElementById('controls') // aqui eu to exportando a section inteira, pra controlar os botões que o usuário vai clicar.
