@@ -4,3 +4,5 @@ export default {
     isRunning: false,
     isMute: true,
 }
+
+// estado padrão da página 
