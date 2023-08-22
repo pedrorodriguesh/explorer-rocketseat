@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +20,8 @@ body{
     display: grid;
     height: 100vh;
     place-content: center;
+
+
 }
 
 #app{
@@ -28,15 +32,14 @@ body{
 .timer{
     font-size: 9rem;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto';
 
-    margin-bottom: 5.6rem;
+    margin-bottom: 4rem;
 }
 
 .controls{
     display: flex;
     gap: 4rem;
-
 }
 
 .controls button{
@@ -60,9 +63,14 @@ body{
     font-size: 4rem;
 
     border: none;
-    border-radius: 16px;
+    border-radius: 9999px;
 
     background-color: var(--button-bckg);
 
     cursor: pointer;
+}
+
+.right-side button:hover{
+    background-color: var(--button-active);
+    color: #FFF;
 }
