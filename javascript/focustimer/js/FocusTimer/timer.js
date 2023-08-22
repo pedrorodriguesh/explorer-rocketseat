@@ -24,8 +24,6 @@ export function countdown(){
         return
     }
 
-
-
     updateDisplay(minutes, seconds)
     
     setTimeout(() => countdown(), 1000) 

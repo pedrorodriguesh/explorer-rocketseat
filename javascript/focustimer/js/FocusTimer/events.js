@@ -25,7 +25,7 @@ export function setMinutes() {
 
     el.minutes.addEventListener('blur', (event) => {
         let time = event.currentTarget.textContent
-        time = time > 60 ? 60 : time
+        time = time > 60 ? 60 : time // operador ternário
 
         state.minutes = time
         state.seconds = 0
