@@ -1,20 +1,25 @@
-//sounds.
-const forestSound = new Audio('./assets/Floresta.wav')
-const rainSound = new Audio('./assets/Chuva.wav')
-const fireSound = new Audio('./assets/Lareira.wav')
-const marketSound = new Audio('./assets/Cafeteria.wav')
+import * as sounds from './focustimer/sounds.js'
 
 //buttons.
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
-    forestSound.play()
-    forestSound.loop = true
+    sounds.forestSound.play()
+    sounds.forestSound.loop = true
 })
 
 const rainBtn = document.getElementById('rain')
 rainBtn.addEventListener('click', () => {
-    rainSound.play()
+    sounds.rainSound.play()
 
+})
+
+
+
+let minutes = document.getElementById('minutes')
+const plus = document.getElementById('plus')
+
+plus.addEventListener('click', () => {
+    minutes.textContent = + 5
 })
 
 
