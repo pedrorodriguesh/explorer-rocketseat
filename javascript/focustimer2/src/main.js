@@ -10,6 +10,7 @@ timer.countdown()
 //buttons.
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
+    forestBtn.classList.toggle('selected')
     sounds.forestSound.play()
     sounds.rainSound.pause()
     sounds.fireSound.pause()
@@ -28,6 +29,7 @@ rainBtn.addEventListener('click', () => {
 
 const fireBtn = document.getElementById('fire')
 fireBtn.addEventListener('click', () => {
+    fireBtn.classList.toggle('selected')
     sounds.fireSound.play()
     sounds.fireSound.loop = true
     sounds.rainSound.pause()
