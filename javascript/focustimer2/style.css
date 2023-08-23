@@ -74,3 +74,7 @@ body{
     background-color: var(--button-active);
     color: #FFF;
 }
+
+.right-side button.selected{
+    background-color: lightgreen;
+}
