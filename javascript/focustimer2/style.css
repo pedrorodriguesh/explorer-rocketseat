@@ -27,6 +27,7 @@ body{
 #app{
     display: flex;
     gap: 12rem;
+    flex-direction: column;
 }
 
 .timer{
@@ -77,4 +78,11 @@ body{
 
 .right-side button.selected{
     background-color: lightgreen;
+}
+
+
+@media (min-width: 768px){
+    #app{
+        flex-direction: row;
+    }
 }
