@@ -81,7 +81,7 @@ body{
 }
 
 .right-side button:hover{
-    background: var(--button-active);
+    background: rgb(0, 141, 192);
     color: #FFF;
     transform: scale(1.15);
 }
@@ -89,7 +89,7 @@ body{
 
 
 .right-side button.selected{
-    background-color: lightgreen;
+    background-color: rgb(64, 228, 132);
 }
 
 
