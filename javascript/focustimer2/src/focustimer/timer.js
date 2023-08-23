@@ -3,7 +3,7 @@ import state from "./state.js"
 import * as actions from './actions.js'
 
 
-export function countdown(){
+export function countdown(){ // lógica do timer.
     if(!state.isRunning){
         return
     }

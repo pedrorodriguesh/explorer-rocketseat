@@ -4,11 +4,13 @@ import * as timer from './focustimer/timer.js'
 timer.updateDisplay()
 timer.countdown()
 
+// aqui é a parte dos sons, criando o evento com addEventListener. 
+
 //buttons.
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
     forestBtn.classList.toggle('selected')
-    forestBtn.classList.contains('selected') ? sounds.forestSound.play() : sounds.forestSound.pause()
+    forestBtn.classList.contains('selected') ? sounds.forestSound.play() : sounds.forestSound.pause() // lógica para tocar só se tiver a classe 'selected'
     sounds.forestSound.loop = true
 })
 
@@ -16,7 +18,7 @@ const rainBtn = document.getElementById('rain')
 rainBtn.addEventListener('click', () => {
     rainBtn.classList.toggle('selected')
     rainBtn.classList.contains('selected') ? sounds.rainSound.play() : sounds.rainSound.pause()
-    sounds.rainSound.loop = true
+    sounds.rainSound.loop = true // loop é pro aúdio ficar tocando infinito.
 
 })
 
