@@ -49,12 +49,14 @@ html:not(.light) .ph-moon{
 }
 
 body{
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     color: var(--text-color);
 
     display: grid;
     height: 100vh;
     place-content: center;
+
+    transition: background .5s;
 }
 
 #app{
