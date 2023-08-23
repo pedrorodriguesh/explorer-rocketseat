@@ -8,28 +8,25 @@ timer.countdown()
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
     forestBtn.classList.toggle('selected')
-    sounds.forestSound.play()
-    sounds.rainSound.pause()
-    sounds.fireSound.pause()
-    sounds.forestSound.loop = true
+    forestBtn.classList.contains('selected') ? sounds.forestSound.play() : sounds.forestSound.pause()
 })
 
 const rainBtn = document.getElementById('rain')
 rainBtn.addEventListener('click', () => {
     rainBtn.classList.toggle('selected')
-    sounds.rainSound.play()
-    sounds.forestSound.pause()
-    sounds.fireSound.pause()
-    sounds.rainSound.loop = true  
+    rainBtn.classList.contains('selected') ? sounds.rainSound.play() : sounds.rainSound.pause()
 })
 
 const fireBtn = document.getElementById('fire')
 fireBtn.addEventListener('click', () => {
     fireBtn.classList.toggle('selected')
-    sounds.fireSound.play()
-    sounds.fireSound.loop = true
-    sounds.rainSound.pause()
-    sounds.forestSound.pause()
+    fireBtn.classList.contains('selected') ? sounds.fireSound.play() : sounds.fireSound.pause()
+})
+
+const marketBtn = document.getElementById('market')
+marketBtn.addEventListener('click', () => {
+    marketBtn.classList.toggle('selected')
+    marketBtn.classList.contains('selected') ? sounds.marketSound.play() : sounds.marketSound.pause()
 })
 
 
