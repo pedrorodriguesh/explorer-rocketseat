@@ -47,10 +47,6 @@ start.addEventListener('click', () => {
     }
     
     state.isRunning = true
-
-
-    
-
     timer.countdown()
 })
 
