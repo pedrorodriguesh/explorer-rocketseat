@@ -48,6 +48,7 @@ start.addEventListener('click', () => {
     
     state.isRunning = true
     timer.countdown()
+    sound.buttonPressAudio.play()
 })
 
 //stop
@@ -57,4 +58,6 @@ stop.addEventListener('click', () => {
     minutes = 0
 
     timer.updateDisplay(0, 0)
+    sound.buttonPressAudio.play()
+
 })
