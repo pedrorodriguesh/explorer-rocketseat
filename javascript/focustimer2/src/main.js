@@ -1,7 +1,4 @@
 import * as sounds from './focustimer/sounds.js'
-import * as el from './focustimer/elements.js'
-import * as actions from './focustimer/actions.js'
-import state from './focustimer/state.js'
 import * as timer from './focustimer/timer.js'
 
 timer.updateDisplay()
@@ -23,8 +20,7 @@ rainBtn.addEventListener('click', () => {
     sounds.rainSound.play()
     sounds.forestSound.pause()
     sounds.fireSound.pause()
-    sounds.rainSound.loop = true
-
+    sounds.rainSound.loop = true  
 })
 
 const fireBtn = document.getElementById('fire')
