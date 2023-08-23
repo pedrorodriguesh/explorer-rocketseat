@@ -42,8 +42,14 @@ minus.addEventListener('click', () => {
 //start
 const start = document.getElementById('start')
 start.addEventListener('click', () => {
+    if(minutes === 0){
+        return
+    }
+    
     state.isRunning = true
 
+
+    
 
     timer.countdown()
 })
