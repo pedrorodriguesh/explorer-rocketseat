@@ -11,12 +11,15 @@ timer.countdown()
 const forestBtn = document.getElementById('tree')
 forestBtn.addEventListener('click', () => {
     sounds.forestSound.play()
+    sounds.rainSound.pause()
     sounds.forestSound.loop = true
 })
 
 const rainBtn = document.getElementById('rain')
 rainBtn.addEventListener('click', () => {
     sounds.rainSound.play()
+    sounds.forestSound.pause()
+    sounds.rainSound.loop = true
 
 })
 
