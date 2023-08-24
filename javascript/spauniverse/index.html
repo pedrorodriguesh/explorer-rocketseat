@@ -19,15 +19,20 @@
         </ul>
     </nav>
 
-    <main>
-        <h1>Explore o Universo</h1>
-        <button>Quero saber mais</button>
-    </main>
+    
 
 
     <div id="app"></div>
 
     <script>
+        
+        const routes = {
+            "/home": ""
+            "/universe": "/pages/universe.html",
+            "/exploration": "/pages/exploration.html"
+        }
+
+
         function route(event) {
             event = event || window.event
             event.preventDefault()
