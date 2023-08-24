@@ -14,4 +14,29 @@
 
 body{ 
     font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+
+    background-image: url(./assets/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+nav{
+    padding: 4rem 7.2rem 4rem;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 4.2rem;
+
+    align-items: center;
+
+    color: var(--title-color);
+}
+
+ul li{
+    font-size: 2.4rem;
 }
