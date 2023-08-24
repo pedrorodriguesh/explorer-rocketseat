@@ -6,15 +6,16 @@
     <title>SPA - Universe</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/Vector.svg" type="image/x-svg">
 </head>
 <body>
-    
     <nav>
         <ul>
             <li><img src="assets/Vector.svg" alt="logo de um vortex"></li>
-            <li>Home</li>
-            <li>O Universo</li>
-            <li>Exploração</li>
+
+            <li><a href="/" onclick="route()">Home</a></li>
+            <li><a href="/universe" onclick="route()">O Universo</a></li>
+            <li><a href="/exploration" onclick="route()">Exploração</a></li>
         </ul>
     </nav>
 
@@ -25,6 +26,14 @@
 
 
     <div id="app"></div>
+
+    <script>
+        function route(event) {
+            event = event || window.event
+            event.preventDefault()
+        }
+
+    </script>
 
 
 </body>
