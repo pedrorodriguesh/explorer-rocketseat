@@ -18,12 +18,34 @@
 
     <script>
 
-        function route(event) {
-            event = event || window.event
-            event.preventDefault()
+        const routes = {
+            "/": "/pages/home.html",
+            "/about": "/pages/about.html",
+            "/contact":"/pages/contact.html",
+            404: "/pages/404.html",
         }
 
-        
+        function route(event) {
+            event = event || window.event
+            event.preventDefault() // preventDefault que já vimos antes, aqui ele está impedindo o link "a" de recarregar a página
+
+            window.history.pushState({}, "", event.target.href)
+
+            handle()
+        }
+
+        function handle(){
+            const { pathname } = window.location // desestruturar. eu estou pegando a propriedade "pathname" do window.location e jogando ela dentro de um objeto.
+            const route = routes[pathname] || routes[404]
+
+            console.log("antes do fetch")
+            fetch(route)
+            .then (data => data.text())
+            .then (html => console.log(html))
+
+            console.log(pathname)
+        }
+
     </script>
     
 </body>
