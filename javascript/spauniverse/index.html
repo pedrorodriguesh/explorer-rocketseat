@@ -19,23 +19,36 @@
         </ul>
     </nav>
 
-    
-
-
     <div id="app"></div>
 
     <script>
         
         const routes = {
-            "/home": ""
-            "/universe": "/pages/universe.html",
-            "/exploration": "/pages/exploration.html"
+            "/": "/javascript/spauniverse/pages/home.html",
+            "/universe": "/javascript/spauniverse/pages/universe.html",
+            "/exploration": "/javascript/spauniverse/pages/exploration.html"
         }
-
 
         function route(event) {
             event = event || window.event
             event.preventDefault()
+
+            window.history.pushState({}, "", event.target.href)
+
+            handle()
+        }
+
+        function handle(){
+            const { pathname } = window.location
+            const route = routes[pathname] // || aqui poderia colocar uma página de erro
+
+            // JavaScript assíncrono
+            fetch(route)
+            .then(data => data.text())
+            .then(html => console.log(html))  // o fetch ele vai buscar a rota, então => buscando(rota)'quando eu achar'. então(dados)
+                
+            console.log(pathname)
+            console.log(route)
         }
 
     </script>
