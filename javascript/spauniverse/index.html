@@ -42,7 +42,7 @@
             const { pathname } = window.location
             const route = routes[pathname] // || aqui poderia colocar uma página de erro
 
-            // JavaScript assíncrono
+            // JavaScript assíncrono, quando chega aqui, o JS, tira essa parte da jogada, executa os 2 console.logs ali debaixo e depois volta pra cá.
             fetch(route)
             .then(data => data.text())
             .then(html => console.log(html))  // o fetch ele vai buscar a rota, então => buscando(rota)'quando eu achar'. então(dados)
