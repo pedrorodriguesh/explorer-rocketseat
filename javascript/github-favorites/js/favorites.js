@@ -20,17 +20,34 @@ export class Favorites {
         this.root = document.querySelector(root) // aqui o this root tá pegando a div #app lá do HTML, quem trouxe a div pra cá foi o "super" da classe debaixo com a herança.
         this.load()
 
-        GithubUser.search('pedrorodriguesh')
-        .then(user => console.log(user))
     }
 
     load() { // essa função load é responsável por carregar e criar os dados, quando chegar a hora de mostar isso lá embaixo eles já estão criados aqui em cima.
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+    }
 
+    save() {
+        localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
     }
 
     async add(username) {  // usamos o async para falar que a função é assíncrona, então aqui com o "await" a gente ta esperando o GithubUser lá de cima, fazer a busca com o fetch().
+        try {  // aqui é o uso de TRY, THROW E CATCH, aqui ele vai TENTAR achar o username do GithubUser.
         const user = await GithubUser.search(username)
+        
+        if(user.login === undefined) {  // SE o valor do user.login foi undefined ele vai JOGAR um novo erro.
+            throw new Error('Usuário não encontrado!')
+        }
+
+        this.entries = [user, ...this.entries] // aqui a gente ta criando um novo array, pegando o usuário novo que achou acima e colocando no array, e ESPALHANDO... com o array antigo.
+        this.update()
+        this.save()
+
+
+    }   catch(error) { // Ai aqui ele vai PEGAR o error e mostrar num alert
+        alert(error.message)
+    } 
+        
+        
     }
 
     delete(user) { 
@@ -39,6 +56,7 @@ export class Favorites {
 
         this.entries = filteredEntries
         this.update()
+        this.save()
     }
 }
 
@@ -52,6 +70,7 @@ export class FavoritesView extends Favorites {
 
         this.update() // aqui estamos tendo uma corrente de funções, estou chamando a update(), que na update() chama a removeAllTr()
         this.onadd()
+        this.save()
     }
 
     onadd() {
