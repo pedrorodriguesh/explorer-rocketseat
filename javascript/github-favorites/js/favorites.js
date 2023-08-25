@@ -20,7 +20,7 @@ export class Favorites {
     async add(username) {  // usamos o async para falar que a função é assíncrona, então aqui com o "await" a gente ta esperando o GithubUser lá de cima, fazer a busca com o fetch().
         try {  // aqui é o uso de TRY, THROW E CATCH, aqui ele vai TENTAR achar o username do GithubUser.
 
-            const userExists = this.entries.find(entry => entry.login === username)
+            const userExists = this.entries.find(entry => entry.login.toLowerCase() === username.toLowerCase())
 
             if(userExists) {
                 throw new Error ('Usuário já cadastrado!')
