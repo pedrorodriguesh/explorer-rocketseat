@@ -1,17 +1,4 @@
-export class GithubUser {
-    static search(username) {
-        const endpoint = `https://api.github.com/users/${username}` // endpoint é onde eu vou buscar os dados.
-
-        return fetch(endpoint)      // o fetch() vai me devolver os dados do endpoit acima, então (then) vai transformar esses dados em json e eu estruturo os dados abaixo.
-        .then(data => data.json()) // data é o nome que eu coloquei pro conjunto de dados que vou receber da api, ai data.json() transforma em json.
-        .then(({ login, name, public_repos, followers }) => ({
-            login,
-            name,                     // aqui eu usei a desestruturação, peguei apenas os itens que eu quero e separei em um novo objeto.
-            public_repos,
-            followers
-        }))
-    }
-}
+import { GithubUser } from './githubUser.js'
 
 
 // classe que vai conter a lógica dos dados. Como os dados serão estruturados.
@@ -32,6 +19,14 @@ export class Favorites {
 
     async add(username) {  // usamos o async para falar que a função é assíncrona, então aqui com o "await" a gente ta esperando o GithubUser lá de cima, fazer a busca com o fetch().
         try {  // aqui é o uso de TRY, THROW E CATCH, aqui ele vai TENTAR achar o username do GithubUser.
+
+            const userExists = this.entries.find(entry => entry.login === username)
+
+            if(userExists) {
+                throw new Error ('Usuário já cadastrado!')
+            }
+
+
         const user = await GithubUser.search(username)
         
         if(user.login === undefined) {  // SE o valor do user.login foi undefined ele vai JOGAR um novo erro.
