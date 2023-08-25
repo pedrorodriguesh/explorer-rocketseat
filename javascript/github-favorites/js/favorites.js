@@ -21,6 +21,13 @@ export class Favorites {
         }
        ]
     }
+
+    delete(user) { 
+        //High-order functions (map, filter, reduce)
+        const filteredEntries = this.entries.filter(entry => entry.login !== user.login) // pelo principio da imutabilidade, eu não to mexendo no array [this.entries] o filter me retorna um NOVO array, o [filteredEntries] 
+
+        console.log(filteredEntries)
+    }
 }
 
 
@@ -56,8 +63,6 @@ export class FavoritesView extends Favorites {
             }
             
         })
-
-    
 
         this.tbody.append(row)
        })
