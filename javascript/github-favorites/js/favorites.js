@@ -29,6 +29,10 @@ export class Favorites {
 
     }
 
+    async add(username) {  // usamos o async para falar que a função é assíncrona, então aqui com o "await" a gente ta esperando o GithubUser lá de cima, fazer a busca com o fetch().
+        const user = await GithubUser.search(username)
+    }
+
     delete(user) { 
         //High-order functions (map, filter, reduce)
         const filteredEntries = this.entries.filter(entry => entry.login !== user.login) // pelo principio da imutabilidade, eu não to mexendo no array [this.entries] o filter me retorna um NOVO array, o [filteredEntries] 
@@ -56,7 +60,7 @@ export class FavoritesView extends Favorites {
 
             const { value } = this.root.querySelector('.search input') // de novo usando a desestruturação, eu peguei o input e usando { value } peguei de dentro dele direto.
 
-            console.log(value)
+            this.add(value)
            
             
         }
