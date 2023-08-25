@@ -1,3 +1,19 @@
+export class GithubUser {
+    static search(username){
+        const endpoint = `https://api.github.com/users/${username}`
+
+        return fetch(endpoint)
+        .then(data => data.json())
+        .then(({login, name, public_repos, followers}) => ({
+            login,
+            name,
+            public_repos,
+            followers,
+        }))
+    }
+}
+
+
 // classe que vai conter a lógica dos dados
 // como os dados são estruturados
 export class Favorites { 
@@ -5,25 +21,23 @@ export class Favorites {
         this.root = document.querySelector(root)
         
         this.load()
+
+        GithubUser.search('pedrorodriguesh').then(user => console.log(user))
     }
 
     load() {
-        const entries = [
-            {
-                login: 'pedrorodriguesh',
-                name: 'Pedro Henrique Rodrigues',
-                public_repos: '11',
-                followers: '1',
-           },
-           {
-                login: 'ZehCoque',
-                name: 'José Coque',
-                public_repos: '29',
-                followers: '6'
-           }
-        ]
 
-        this.entries = entries
+        this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
+
+        this.entries = []
+    }
+
+    delete(user){
+        // High-order functions (map, filter, find, reduce)
+        const filteredEntries = this.entries.filter(entry => entry.login !== user.login)
+
+        this.entries = filteredEntries
+        this.update()
     }
 }
 
@@ -49,6 +63,14 @@ export class FavoritesView extends Favorites {
         row.querySelector('.user span').textContent = user.login
         row.querySelector('.repositories').textContent = user.public_repos
         row.querySelector('.followers').textContent = user.followers
+
+        row.querySelector('.remove').onclick = () => {
+            const isOk = confirm('Tem certeza que deseja deletar essa linha?')
+
+            if(isOk){
+                this.delete(user)
+            }
+        }
 
         this.tbody.append(row)
     })
