@@ -43,8 +43,22 @@ header{
     padding: 1.4rem;
     border-radius: 5px;
     background: #06181C;
+    color: white;
 
     border: none;
+
+    font-family: 'Roboto';
 }
 
-.
+.input-wrapper button{
+    border-radius: 5px;
+    background: #065E7C;
+    padding: 1.2rem 3.2rem;
+    border: none;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+}
