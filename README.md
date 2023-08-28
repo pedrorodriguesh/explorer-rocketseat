@@ -1,3 +1,3 @@
-# explorer-rocketseat
+### My exercises in RocketSeat Explorer
  
- Meus estudos na jornada do Explorer da RocketSeat.
+
