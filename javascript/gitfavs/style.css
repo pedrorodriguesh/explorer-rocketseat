@@ -28,7 +28,7 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    margin: 2.5rem 0;
+    margin: 5rem 0 8.7rem;
 }
 
 .input-wrapper{
@@ -59,6 +59,66 @@ header{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
+}
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
 
+table *{
+    font-size: 1.6 rem;
+}
+
+table th{
+    background-color: #092D38;
+    padding: 1.6rem 3.2rem;
+
+    text-align: left;
+}
+
+table th:first-child{
+    border-top-left-radius: .8rem
+}
+
+table th:last-child{
+    border-top-right-radius: .8rem;
+}
+
+table tr:nth-child(odd){
+    background: rgba(6, 22, 27, 0.50);
+}
+
+table tr:nth-child(even){
+    background: #06181C;
+}
+
+table td{
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 999999rem;
+}
+
+.remove{
+    text-align: center;
+    font-size: 1.6rem;
+
+    background: none;
+    border: none;
+
+    color: #F75A68;
+    cursor: pointer;
 }
