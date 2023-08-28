@@ -60,11 +60,21 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+
+    transition: background .2s ease-in
+}
+
+.input-wrapper button:hover{
+    background: white;
+    color: #065E7C;
 }
 
 table{
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid #4A808C;
+     
+    border-radius: .4rem ;
 }
 
 table *{
@@ -73,7 +83,7 @@ table *{
 
 table th{
     background-color: #092D38;
-    padding: 1.6rem 3.2rem;
+    padding: 1.6rem 1.5rem;
 
     text-align: left;
 }
@@ -92,10 +102,11 @@ table tr:nth-child(odd){
 
 table tr:nth-child(even){
     background: #06181C;
+    border: 1px solid #4A808C;
 }
 
 table td{
-    padding: 1.5rem;
+    padding: 1.7rem;
     text-align: left;
 }
 
@@ -103,6 +114,15 @@ td.user{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+td.user a{
+    text-decoration: none;
+    color: white;
+}
+
+td.user a p{
+    font-weight: bold;
 }
 
 td.user img{
@@ -113,7 +133,7 @@ td.user img{
 }
 
 .remove{
-    text-align: center;
+    text-align: left;
     font-size: 1.6rem;
 
     background: none;
@@ -121,4 +141,8 @@ td.user img{
 
     color: #F75A68;
     cursor: pointer;
+}
+
+.remove:hover{
+    text-decoration: underline;
 }
