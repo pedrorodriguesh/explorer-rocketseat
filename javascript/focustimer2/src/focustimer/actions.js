@@ -46,9 +46,15 @@ start.addEventListener('click', () => {
         return
     }
     
+    if(state.isRunning === true){
+        return
+    }
+    
     state.isRunning = true
     timer.countdown()
     sound.buttonPressAudio.play()
+
+
 })
 
 //stop
