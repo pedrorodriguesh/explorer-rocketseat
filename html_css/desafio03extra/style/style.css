@@ -227,6 +227,7 @@ fieldset legend{
 
     margin-top: 8px;
     margin-bottom: 25px;
+    appearance: none;
 }
 
 .input-wrapper label{
