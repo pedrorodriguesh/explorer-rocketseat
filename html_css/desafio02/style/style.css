@@ -75,6 +75,7 @@ h1{
     color: var(--h-color);
 
     margin-bottom: 59px;
+    
 }
 
 section p{
@@ -84,7 +85,7 @@ section p{
     line-height: 28px;
 
     color: var(--p-color);
-    
+
 }
 
 footer{
