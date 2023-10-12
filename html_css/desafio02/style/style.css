@@ -85,7 +85,6 @@ section p{
     line-height: 28px;
 
     color: var(--p-color);
-
 }
 
 footer{
@@ -102,5 +101,5 @@ footer{
 div.image{
     display: flex;
     justify-content: center;
-    
+
 }
