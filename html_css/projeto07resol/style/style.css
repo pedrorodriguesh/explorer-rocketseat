@@ -140,7 +140,7 @@ main h1{
 
 .details{
     padding: 2.2rem;
-    background-color: var(--color-base-white);
+    background-color: rgba(255, 0, 0, 0.359);
     z-index: 1;
     position: relative;
 }
