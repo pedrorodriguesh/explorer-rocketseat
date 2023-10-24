@@ -116,11 +116,8 @@ article p{
 
 .articles{
     display: flex;
-
     padding: 2.6rem;
-
     gap: 1.6rem;
-
     align-items: center;
 }
 
